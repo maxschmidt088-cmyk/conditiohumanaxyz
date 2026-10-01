@@ -63,8 +63,8 @@ export default function App() {
       maxWidth: '480px',
       margin: '0 auto'
     }}>
-      {/* Sprachauswahl Oben */}
-      <div style={{ display: 'flex', gap: '24px', fontFamily: "system-ui, -apple-system, sans-serif", fontSize: '16px', letterSpacing: '1px' }}>
+      {/* Sprachauswahl Oben - bündig und gleichmäßig verteilt */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', fontFamily: "system-ui, -apple-system, sans-serif", fontSize: '16px', letterSpacing: '1px' }}>
         {(['EN', 'ES', 'FR', 'JP'] as Lang[]).map((l) => (
           <button
             key={l}
@@ -86,15 +86,15 @@ export default function App() {
         ))}
       </div>
 
-      {/* Mittlerer Textfluss */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '36px', fontStyle: 'italic', fontSize: '26px', lineHeight: '31.7px', textAlign: 'left', margin: '40px 0' }}>
+      {/* Mittlerer Textfluss - zentriert */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '36px', fontStyle: 'italic', fontSize: '26px', lineHeight: '31.7px', textAlign: 'center', margin: '40px 0' }}>
         {activeContent.texts.map((t, idx) => (
           <p key={idx} style={{ margin: 0 }}>{t}</p>
         ))}
       </div>
 
-      {/* Footer / Instagram Link */}
-      <div>
+      {/* Footer / Instagram Link - zentriert durch Parent */}
+      <div style={{ textAlign: 'center' }}>
         <a 
           href="https://www.instagram.com/conditio.humana.xyz?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" 
           target="_blank" 
