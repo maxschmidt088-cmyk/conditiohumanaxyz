@@ -16,3 +16,12 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+
+/* Stil für den Sprach-Container, damit er exakt breit ist wie der Text und die Ränder bündig sitzen */
+.language-nav, nav, header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
