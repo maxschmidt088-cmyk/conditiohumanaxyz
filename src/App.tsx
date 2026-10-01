@@ -87,7 +87,7 @@ export default function App() {
       </div>
 
       {/* Mittlerer Textfluss - zentriert */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '36px', fontStyle: 'italic', fontSize: '26px', lineHeight: '31.7px', textAlign: 'center', margin: '40px 0' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '36px', fontStyle: 'italic', fontSize: '26px', lineHeight: '31.7px', textAlign: 'center', margin: '80px 0' }}>
         {activeContent.texts.map((t, idx) => (
           <p key={idx} style={{ margin: 0 }}>{t}</p>
         ))}
